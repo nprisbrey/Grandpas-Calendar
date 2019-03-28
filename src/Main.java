@@ -218,8 +218,8 @@ public class Main {
         return testdate;
     }
     public static String StartTime(String description) {
-        int amindex=description.indexOf("a ");
-        int pmindex=description.indexOf("p ");
+        int amindex=description.toLowerCase().indexOf("a ");
+        int pmindex=description.toLowerCase().indexOf("p ");
         int startindex,endindex,colonindex=0;
         String endtime;
         if(amindex==-1 && pmindex==-1) { return "";}
